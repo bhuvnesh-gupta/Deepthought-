@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>DeepThought</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="hero">
+    <div id="navbar" class="navbar">
+      <img class="logo" src="logo/logo.svg" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-home"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><i id="different" class="fa-solid fa-ellipsis-vertical"></i></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main class="container">
+    <section id="main-page">
+      <!-- heading -->
+      <div id="main-heading">
+        <div class="display-flex">
+          <h4>Technical Project Management</h3>
+            <button class="btn-primary" type="button">Submit Task</button>
+        </div>
+      </div>
+      <!-- message -->
+      <div id="message">
+        <h4 class="tasks-message-heading"></h4>
+        <p class="tasks-message-description"></p>
+      </div>
+    </section>
+
+    <div class="journey-sidebar"> 
+      <div class="journey-sidebar-heading"></div>
+      <button class="journey-card-button" onclick="openNav()" >1
+      </button>
+    </div>
+
+    <div class="journey-card">
+      <div class="journey-card-heading">
+        <div>Journey Board </div>
+      </div>
+        <div class="journey-card-list">
+          <ul>
+            <div class="button-and-list-flex">
+              <li class="journey-card-list-main-list">
+              <span>Explore The World Of Management</span></li>
+            <button class="journey-card-button"  onclick="closeNav()"  >1
+            </button>
+            </div>
+            <div class="journey-card-list-sub-list" onclick="closeNav()">
+              <li>Technical Project Management</li>
+              <li>Thread Build</li>
+              <li>Structure Your Pointers</li>
+              <li>4SA Method</li>
+            </div>
+          </ul>
+        </div>
+    </div>
+
+    <!-- noice  -->
+    <div class="journey-card-notice">
+      <div class="notice-flex">
+        <div class="notice-board-card-heading mixed">
+          <div>  <button class="notice-button-cross">X</button></div>
+          <div>N</br>o</br>t</br>i</br>c</br>e</br></br>B</br>o</br>a</br>r</br>d</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Section 1 -->
+    <section class="card-section">
+      <!-- Card one -->
+      <div class="project-card" id="18883">
+        <div class="test">
+          <h4 class="project-card-heading"></h4>
+          <span class="icon-info"><i class="fa-solid fa-info"></i></span>
+        </div>
+        <p class="project-card-description-container"></p>
+        <div class="youtube">
+          <iframe  src="https://www.youtube.com/embed/TiMRwri1xJ8"
+          frameborder="0"></iframe>
+        </div>
+      </div>
+      
+      <!-- Card Two -->
+      <div class="thread-card">
+        <div class="test">
+          <h4 class="thread-card-heading"></h4>
+          <span class="icon-info"><i class="fa-solid fa-info"></i></span>
+        </div>
+        <p class="thread-card-description-container"></p>
+        <div class="thread-card-sub-heading"> <span><i id="arrow up" class="fa-solid fa-chevron-up"></i> </span>Thread A</div>
+        <div class="thread-card-data">
+        <div class="thread-card-content">
+          <div class="sub-card">
+           <div class="sub-card-heading">Sub Interpretation 1</div>
+           <textarea rows="6"   placeholder="Enter Text Here"></textarea>
+          </div>
+          <div class="sub-card">
+            <div class="sub-card-heading">Sub Thread 1</div>
+            <textarea rows="6">Enter Text Here</textarea>
+          </div>
+        </div>
+        <div class="thread-card-navigation-container">
+          <i id="arrow up" class="fa-sharp fa-regular fa-lightbulb"></i>
+          <i id="sms-icon"class="fa-solid fa-message"></i>
+          <i id="question" class="fa-regular fa-question"></i>
+          <i id="leaf" class="fa-solid fa-leaf"></i>
+          <button class="thread-card-btn" type="button">Select Categ <span><i class="fa fa-chevron-down"></i></span></button>
+          <button class="thread-card-btn" type="button">Select Proces <span><i class="fa fa-chevron-down"></i></span></button>
+        </div>
+        <div>
+          <button class="btn-second" type="button"><i class="fa fa-plus"></i>Sub-thread</button>
+        </div>
+        <div class="thread-card-content">
+          <div class="sub-card">
+            <div class="sub-card-heading">Summary for Thread A</div>
+            <textarea rows="6"   placeholder="Enter Text Here"></textarea>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+      
+      <!-- Card Section 2 -->
+      <section class="card-section-2">
+        <!-- card three -->
+        <div class="structure-card">
+          <div class="test">
+            <h4 class="structure-card-heading"></h4>
+            <span class="icon-info"><i class="fa-solid fa-info"></i></span>
+          </div>
+          <p class="structure-card-description-container"></p>
+          <div class="structure-card-form">
+            <label class="structure-card-form-heading" for="Title">Title</label>
+            <input class="structure-card-form-input" type="text">
+            <label class="structure-card-form-heading" for="Content">Content</label>
+            <div class="struccture-card-content-data">
+              <div class="structure-card-content-navigation">
+                <a href="#">File</a>
+                <a href="#">Edit</a>
+                <a href="#">View</a>
+                <a href="#">Insert</a>
+                <a href="#">Format</a>
+                <a href="#">Tools</a>
+                <a href="#">Table</a>
+                <a href="#">Help</a>
+                <div class="structure-card-content-icon">
+                  <a href="#"><i class="fa fa-undo"></i></a>
+                  <a href="#"><i class="fa fa-redo"></i></a> 
+                  <a href="#"><i class="fa fa-maximize"></i></a>
+                    <input type="submit" class="structure-card-content-button" Value="Paragraph">
+                  <a href="#"><i class="fa-solid fa-ellipsis"></i></a> 
+                 </div>
+              </div>
+             <div>
+              <input class="structure-card-content-textbox" type="text">
+             </div>
+            </div>
+          </div> 
+        </div> 
+
+        <!-- 4th Card -->
+        <div class="method-card"> 
+          <div class="test">
+            <h4 class="method-card-heading"></h4>
+            <span class="icon-info"><i class="fa-solid fa-info"></i></span>
+          </div>
+         
+          <p class="method-card-description-container"></p>
+          <div class="method-card-data">
+            <div class="method-card-data-heading">
+              <span><i id="arrow up" class="fa-solid fa-chevron-up"></i> </span>Introduction
+            </div>
+              <div class="method-card-data-description">
+                The 4SA Method , How to bring a idea into progress?
+              </div>
+              <div>
+                <a href="https://dtthon.deepthought.education/sharer?id=01aa3cff-db8e-8d9d-afc0-1671715937878" class="method-card-data-button">See More</a>
+              </div>
+              <div class="method-card-data-sub-heading"><span><i id="arrow up" class="fa-solid fa-chevron-up"></i> </span>Thread A</div>
+              <div class="method-card-data-description">
+                How are you going to develop your stratergy ? Which method are you going to use to develop a stratergy ? What if the project is lengthy?
+              </div>
+              <div>
+                <a href="https://dtthon.deepthought.education/sharer?id=01aa3cff-db8e-8d9d-afc0-1671715937878" class="method-card-data-button">See More</a>
+              </div>
+              <div>
+                <h5 class="method-card-data-example">Example 1</h5>
+                <div class="method-card-data-example-description">
+                  You have a concept , How will you put into progress?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+  </section>
+  </main>
+  <Footer class="footer">
+    <div class="footer-icons-question">
+      <a href="#"><i class="fa solid fa-question"></i></a>
+      </div>
+      <div class="footer-icons-people">
+        <a href="#"><i class="fa-solid fa-people-line"></i></a>
+      </div>
+      <div class="footer-icons-calender">
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+      </div>
+    </div>
+  </Footer>
+
+
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
+
+<!-- <span class="icon-info"><i class="fa-solid fa-info"></i></span> -->
